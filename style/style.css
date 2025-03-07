@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    list-style-type: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    background-color: rgb(3, 5, 10);
+}
+
+:root{
+    --primary-color: rgb(0, 0, 0);
+    --secondary-color: rgb(255,255,255);
+    --main-color: rgb(15, 28, 61);
+    --sub-color: rgb(35, 59, 122);
+    --sub-light-color: rgb(76, 119, 228);
+    --yellow-color: rgb(245, 229, 85);
+    --green-color: rgb(98, 245, 85);
+    --orange-color: rgb(245, 162, 85);
+    --red-color: rgb(245, 85, 85);
+    --purple-color: rgb(141, 51, 214);
+}
+
+.content-middle{
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--main-color);
+    width: auto;
+    min-width: 100vw;
+    color: var(--secondary-color);
+    box-shadow: 0 3px 15px var(--primary-color);
+    position: fixed;
+}
+
+@keyframes rotation {
+    from {
+      rotate: 0deg;
+    }
+  
+    to {
+      rotate: 1440deg;
+    }
+  }
+  
+
+.header-icon{
+    padding: 1rem;
+    margin-left: 1rem;
+    width: 4rem;
+    animation-duration: 20s;
+    animation-name: rotation;
+    animation-iteration-count: infinite;
+}
+
+.user-icon{
+    font-size: 1.5rem;
+    display: flex;
+    align-self: center;
+    margin-left: auto;
+    margin-right: 5rem;
+}
+
+.user-icon:hover{
+    color: var(--sub-light-color);
+    cursor: pointer;
+}
+
+.header-title{
+    align-self: center;
+    color: var(--sub-color);
+    transition: color 2s;
+}
+
+.header-title:hover{
+    color: var(--sub-light-color);
+    cursor: pointer;
+}
+
+.divisionary-line{
+    background-color: var(--primary-color);
+    border: 0;
+    opacity: 50%;
+    padding: .05rem;
+    margin-left: 4.2rem;
+}
+
+.header-menu{
+    font-size: 1rem;
+    min-width: fit-content;
+    width: auto;
+    align-self: center;
+}
+
+.header-menu-item{
+    display: inline;
+    margin: 2rem;
+    font-weight: bold;
+}
+
+.header-menu-item:hover{
+    cursor: pointer;
+    color: var(--sub-light-color);
+}
+
+.opt-icon1,
+.opt-icon2,
+.opt-icon3,
+.opt-icon4,
+.opt-icon5{
+    font-size: .45rem;
+    transform: translateY(-.1rem);
+    margin-left: .2rem;
+    font-weight: bolder;
+}
+
+.opt-icon1{
+    color: var(--purple-color);
+}
+
+.opt-icon2{
+    color: var(--green-color);
+}
+
+.opt-icon3{
+    color: var(--yellow-color);
+}
+
+.opt-icon4{
+    color: var(--orange-color);
+}
+
+.opt-icon5{
+    color: var(--red-color);
+}
+
+.content-left{
+    z-index: 1;
+    padding: 2.125rem;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    height: auto;
+    min-height: 100vh;
+    background-color: var(--sub-color);
+}
+
+.side-menu{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-top: 5rem;
+    padding: 1.6rem;
+    align-self: flex-start;
+    color: var(--secondary-color);
+}
+
+.side-menu-item{
+    text-align: center;
+    cursor: pointer;
+    width: 12rem;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.side-menu-item:hover{
+    background-color: var(--main-color);
+    color: var(--sub-light-color);
+    border-radius: 5px;
+}
+
+.side-menu-item i{
+    margin-right: 20px;
+}
+
+.messagealert{
+    z-index: 2;
+    font-size: .6rem;
+    padding: .2rem;
+    border-radius: 50rem;
+    position: absolute;
+    transform: translate3d(11.25rem, -2rem, 0);
+    background-color: var(--red-color);
+    color: var(--secondary-color);
+}
+
+.leave-btn{
+    background-color: var(--main-color);
+    padding: 1rem;
+    border: 0;
+    border-radius: 5px;
+    color: var(--secondary-color);
+    font-size: 1rem;
+    margin-top: 5vh;
+}
+
+.leave-btn:hover{
+    cursor: pointer;
+    background-color: var(--sub-light-color);
+}
+
+.full-content{
+    display: flex; 
+    flex-wrap: column;
+}
+
+.content-center{
+    margin-top: 5rem;
+    padding: 2rem;
+    width: 100%;
+}
+
+.card-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-img img{
+    width: auto;
+    height: 20rem;
+    padding: 5px;
+    transition: transform .25s;
+    border-radius: 5px;
+}
+
+.card-img img:hover{
+    transform: scale(1.035);
+    cursor: pointer;
+}
+
+.sub{
+    text-align: center;
+    color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+}
